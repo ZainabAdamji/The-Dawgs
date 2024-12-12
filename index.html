@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS171 - A Guide for Prospective Dog Owners</title>
+
+  <!-- TODO: Add your CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/page_1.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/questions.css">
+  <link rel="stylesheet" href="css/matched-breeds.css">
+
+  <link rel="stylesheet" href="css/page_3.css">
+  <link rel="stylesheet" href="css/page_4.css">
+  <link rel="stylesheet" href="css/conclusion.css">
+
+  <!-- TODO: Add Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Rubik+Bubbles&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- TODO: Add container here -->
+<div class="container">
+  <section class="page" id="page1">
+    <h1>A Guide for Prospective Dog Owners</h1>
+    <img src="img/paw-print.png" alt="Dog paw print">
+    <div class="scroll-indicator">
+      <p>Press to start</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="intro">
+    <div class="intro-box">
+      <h1>Welcome</h1>
+      <p>You’re in the right spot to find your perfect pup! First, we’ll get to know you a little better to help match you with the
+        <span class="highlight">top 10 dog breeds</span> that fit your lifestyle. From there, we’ll guide you through
+        <span class="highlight">brainstorming the perfect name</span> and
+        <span class="highlight">finding potential shelters</span> where you can adopt your new furry friend. Let’s dive in!
+      </p>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question1">
+    <div class="question-box">
+      <h1>Question 1</h1>
+      <p>How active are you?</p>
+      <p class="scale-description">(1: Not active at all, 5: Extremely active)</p>
+      <form>
+        <label for="activity-level">Select your activity level:</label>
+        <select id="activity-level" name="activity-level">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question2">
+    <div class="question-box">
+      <h1>Question 2</h1>
+      <p>How much space does your home have?</p>
+      <p class="scale-description">(1: Super crammed room, 3: Decently sized apartment, 5: Large house)</p>
+      <form>
+        <label for="home-space">Select your home space:</label>
+        <select id="home-space" name="home-space">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question3">
+    <div class="question-box">
+      <h1>Question 3</h1>
+      <p>Do you have experience with owning dogs?</p>
+      <p class="scale-description">(1: No experience, 3: Some experience, 5: Expert dog owner)</p>
+      <form>
+        <label for="dog-experience">Select your experience level:</label>
+        <select id="dog-experience" name="dog-experience">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question4">
+    <div class="question-box">
+      <h1>Question 4</h1>
+      <p>Does the dog need to be child-friendly?</p>
+      <p class="scale-description">(1: No need to consider children, 3: Needs to be moderately friendly, 5: Needs to be extremely friendly)</p>
+      <form>
+        <label for="child-friendly">Select child-friendliness requirement:</label>
+        <select id="child-friendly" name="child-friendly">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question5">
+    <div class="question-box">
+      <h1>Question 5</h1>
+      <p>How much can you tolerate shedding and drooling?</p>
+      <p class="scale-description">(1: Cannot tolerate at all, 5: Don't mind at all)</p>
+      <form>
+        <label for="shedding">Shedding:</label>
+        <select id="shedding" name="shedding">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="drooling" style="margin-top: 20px;">Drooling:</label>
+        <select id="drooling" name="drooling">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="question6">
+    <div class="question-box">
+      <h1>Question 6</h1>
+      <p>What is your monthly budget for dog-related expenses?</p>
+      <p class="scale-description">(Note: Budget goes towards food, medical expense, grooming...)</p>
+      <form>
+        <label for="budget">Enter your monthly budget:</label>
+        <input type="number" id="budget" name="budget" min="1" placeholder="(dollar amount)" required>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="end-questions">
+    <div class="question-box">
+      <h1>All Done!</h1>
+      <p>Ready to meet your best-matching breeds? Please <span class="highlight">select at least one breed and up to five</span>. We’ll keep your choices in mind when helping you find where to get your perfect dog!</p>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="matched-breeds">
+    <h2>Meet your matches!</h2>
+    <div id="podium"></div>
+    <h3>Contenders...</h3>
+    <div id="ranking"></div>
+    <div id="breed-tooltip" class="tooltip"></div>
+    <button id="matched-breeds-next-button" class="next-button">
+      Confirm breed selection
+    </button>
+  </section>
+
+  <section class="page" id="page3-intro">
+    <div class="intro-box">
+      <h1>Next Step: Choose a Name!</h1>
+      <p>
+        We’ll help you brainstorm a list of possible names for your furry friend,
+        taking into account the breeds you just selected, as well as dog gender
+        and name commonality.
+      </p>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+
+  <section class="page" id="page3-gender">
+    <div class="question-box">
+      <h1>Gender Preference</h1>
+      <p>We'll consider this in the names we recommend to you!</p>
+      <form>
+        <label for="dog-gender-select">Select a gender:</label>
+        <select id="dog-gender-select" name="dog-gender-select">
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </form>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+
+  <section class="page" id="page3-1">
+    <div class="question-box">
+      <h1>Name Uniqueness</h1>
+      <p>How Unique Do You Want Your Dog's Name to Be? Use the slider below to select a value for how common (or uncommon) you'd like the name to be!</p>
+      <p>0 = extremely uncommon; 100 = extremely common</p>
+      <div id="popularity-slider" style="margin: 20px auto; width: 80%;"></div>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+
+  <section class="page" id="page3">
+    <div id="dog-name-vis"></div>
+    <div id="name-info-tooltip" class="tooltip"></div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="page4">
+    <div class="question-box">
+      <h1>Consider adopting a dog</h1>
+      <p>
+        Only 1 in 10 dogs born will find a permanent home.
+        Shelters euthanize many animals due to a lack of space and adopters.
+        Adopting a shelter dog can give them a second chance at a happy life.
+        Shelter dogs often show gratitude and loyalty to their new families.
+      </p>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="page4-1">
+    <div class="heatmap-section">
+      <h2 class="heat-map-title">Homeless Dogs Across the United States</h2>
+      <div class="instructions">
+        <p>
+          Hover over a state to see the number of homeless dogs.
+        </p>
+      </div>
+      <div id="heatmap"></div>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="page4-2">
+    <div id="stateDropdownContainer">
+      <h1>Find Adoptable Dogs in Your State</h1>
+      <label for="stateDropdown">Select your state:</label>
+      <select id="stateDropdown">
+        <option value="" disabled selected>Select a state</option>
+      </select>
+    </div>
+  </section>
+  <section class="page" id="page4-3">
+    <div class="state-map-wrapper">
+      <div class="instructions-container">
+        <div class="instructions-box">
+          <h3>How to Use This Map</h3>
+          <ul>
+            <li>Hover over the 🐶 emojis to see quick details about adoptable dogs.</li>
+            <li>Click on an emoji to view a detailed card with additional information.</li>
+            <li>Click the "Filter by Selected Breeds" button to update the map based on your preferences.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="state-map-container">
+        <h2 class="state-map-title">Adoptable Dogs in Your State</h2>
+        <button id="filterButton" class="filter-button">Filter by Selected Breeds</button>
+        <div id="stateMap"></div>
+      </div>
+      <div class="selected-breeds-container">
+        <div class="selected-breeds-box">
+          <h3 class="sidebar-title">Selected Breeds</h3>
+          <ul id="selected-breeds-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <p>Press to continue</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="page-conclusion">
+    <div class="question-box">
+      <h1>Congratulations!</h1>
+      <p>Thank you for letting us be part of your journey to finding the perfect furry friend! Whether you've fallen in love with poodles, terriers, or another breed, and are considering names like Sally or Tommy, we hope you're excited to welcome a dog into your life. We’re glad you explored adoptable dogs near you—remember, adopting is a lifelong commitment, and so many wonderful companions are waiting to join your family. Best of luck as you embark on this exciting adventure!</p>
+    </div>
+    <div class="scroll-indicator">
+      <p>Credits</p>
+      <img src="img/arrow.png" alt="Downward arrow">
+    </div>
+  </section>
+  <section class="page" id="credits">
+    <div class="question-box">
+      <h1>Credits</h1>
+      <p>Authors: Yiyi Wang, Zainab Adamji, Ashley Hernandez</p>
+      <p>Sources:</p>
+      <ul>
+        <li><a href="https://www.kaggle.com/datasets/jainaru/dog-breeds-ranking-best-to-worst">Kaggle Dog Ranking Dataset</a></li>
+        <li><a href="https://www.kaggle.com/datasets/yonkotoshiro/dogs-breeds">Kaggle Dog Breeds Dataset</a></li>
+        <li><a href="https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp/about_data">NYC Dog Licensing Dataset</a></li>
+        <li><a href="https://www.kaggle.com/datasets/whenamancodes/dog-adoption">Kaggle Dog Adoption Dataset</a></li>
+        <li><a href="https://www.kaggle.com/datasets/thedevastator/adoptable-dogs-in-the-us">Kaggle US Shelters Dataset</a></li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- embedding JS libraries (from HW 5) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.4.0/nouislider.min.js"></script>
+
+<!-- D3 included -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+
+
+<!-- TODO: Add your javascript file -->
+<script src="js/page_4/heatMapVis.js"></script>
+<script src="js/page_4/page4-2.js" defer></script>
+<script src="js/page_4/stateMap.js"></script>
+<script src="js/page_4/page4-3.js" defer></script>
+<script src="js/breed.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dogNameVis.js"></script>
+</body>
+</html>

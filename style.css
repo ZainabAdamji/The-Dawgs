@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container to Enable Scroll Snapping */
+.container {
+    /*scroll-snap-type: y mandatory; !* Vertical snapping *!*/
+    overflow-y: scroll; /* Enable scrolling */
+    height: 100vh; /* Full viewport height */
+    background-color: #ffee8c;
+}
+
+/* Individual Pages */
+.page {
+    /*scroll-snap-align: start; !* Snap to the start of each section *!*/
+    height: 100vh; /* Full height for each page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.page.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

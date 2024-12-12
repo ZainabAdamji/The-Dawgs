@@ -1,0 +1,176 @@
+#matched-breeds {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), radial-gradient(closest-side, #fff, #fff, #ffee8c);
+
+    /*background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), radial-gradient(closest-side, #fff, #fff, #ffee8c);*/
+}
+
+.podium-text {
+    font-size: 5vw;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: bold;
+    fill: #fff;
+}
+
+#podium {
+    height: 70%;
+    width: 100%;
+}
+
+#ranking {
+    height: 30%;
+    width: 100%;
+}
+
+#matched-breeds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#matched-breeds h2{
+    margin-top: 7vw;
+    font-size: 2.5rem;
+    color: #333;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+#matched-breeds h3{
+    text-align: left;
+    font-size: 2rem;
+    color: #333;
+    font-family: "Sour Gummy", sans-serif;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+text:hover {
+    cursor: grab;
+}
+
+text {
+    transition: all 0.3s ease;
+}
+
+text.selected {
+    fill: #a1c6be;
+    text-shadow:  0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+image.podium-breed-image:hover, image.contenders-image:hover {
+    cursor: grab;
+}
+
+image.podium-breed-image, image.contenders-image {
+    transition: all 0.3s ease;
+}
+
+image.podium-breed-image.selected, image.contenders-image.selected {
+    /*outline: 2px solid #ff4500; !* Highlight selected images *!*/
+    /*color: #ff4500; !* Change font color for selected text *!*/
+    animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Default position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up by 10px */
+    }
+}
+
+#error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Sour Gummy', system-ui;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#breed-tooltip {
+    position: absolute;
+    background-color: white;
+    border: 2px solid #a1c6be;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    max-width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+    font-family: 'Sour Gummy', system-ui;
+}
+
+#breed-tooltip table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#breed-tooltip td {
+    padding: 4px 8px;
+    vertical-align: top;
+}
+
+#breed-tooltip td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+#breed-tooltip td:last-child {
+    text-align: left;
+    font-weight: normal;
+    color: #000;
+}
+
+.next-button {
+    position: absolute;
+    right: -2vw;
+    bottom: 26%;
+    transform: translateX(-50%);
+    background-color: #a1c6be;
+    font-family: 'Sour Gummy', system-ui;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #819E98;
+}
+
+@keyframes diagonal-bounce {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-7px, 7px);
+    }
+}
+
+.diagonal-bounce {
+    animation: diagonal-bounce 2s infinite ease-in-out;
+}
+
+
+
+
